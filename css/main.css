@@ -1,0 +1,836 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #543024;
+    font-size: 15px;
+
+}
+
+div,
+p,
+input,
+header,
+a,
+form {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,myOverlay
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 61px;
+}
+
+h3 {
+    font-size: 19px;
+}
+
+section {
+    padding-top: 96px;
+}
+
+ul,
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+
+
+.routes img{
+    width:50%;
+}
+
+.about img{
+    width:50%;
+}
+
+.btn {
+    background: #FF7D34;
+    border-radius: 69px;
+    color: #fff;
+    width: 221px;
+    padding: 16px 40px;
+    font-weight: bold;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    border: 1px solid #FF7D34;
+    cursor: pointer;
+}
+
+#myModal {
+  width: 298px; height: 218px;
+  padding: 18px 9px;
+  border-radius: 4px;
+  background: #fafafa;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  display: none;
+  opacity: 0;
+  z-index: 38;
+  text-align: center;
+}
+
+#myModal #myModal__close {
+  width: 21px; height: 21px;
+  position: absolute;
+  font-size: 29px;
+  top: 1px; right: 11px;
+  cursor: pointer;
+  display: block;
+}
+
+#myOverlay {
+  z-index: 37;
+  position: fixed;
+  background: rgba(0,0,0,.7);
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #FF7D34;
+    border: 1px solid #FF7D34;
+}
+
+.btn-ghost {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    color: #FF7D34;
+    border: 1px solid #FF7D34;
+    border-radius: 69px;
+    width: 249px;
+    padding: 18px 35px;
+    display: block;
+}
+
+.btn-ghost:hover {
+    background: #FF7D34;
+    color: #fff;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: url('../img/header-bg.jpg') no-repeat center top / cover;
+    color: #fff;
+    padding-top: 43px;
+    padding-bottom: 75px;
+}
+
+.header a {
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.055em;
+    display: block;
+    width: 135px;
+    padding-left: 34px;
+    background: url('../img/logo.svg') no-repeat left center;
+    margin-right: 111px;
+    padding-top: 5px;
+}
+
+.menu {
+    display: flex;
+
+}
+
+.menu li:not(:last-child) {
+    margin-right: 48px;
+}
+}
+
+.menu a {
+    padding-bottom: 5px;
+}
+
+.menu a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+        transition: all 2.5s ease;
+
+
+
+}
+
+
+.menu .country {
+    margin-left: ;
+    width: 109px;
+    font-style: 14px;
+}
+
+.next-trip {
+    display: block;
+    margin-left: 74px;
+    margin-right: 53px;
+}
+
+.next-trip .country {
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+
+}
+
+.next-trip .next-country {
+    font-size: 12px;
+    display: block;
+}
+
+.call {
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+    align-items: center;
+}
+
+.call-btn {
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    display: block;
+    width: 170px;
+    padding: 11px 26px;
+    text-align: center;
+}
+
+.call-btn:hover {
+    background: #fff;
+    color: #3B4B81;
+}
+
+.call .phone-number {
+    margin-left: 21px;
+    font-size: 15px;
+}
+
+.offer {
+    margin-top: 193px;
+    text-align: center;
+
+}
+
+.offer h1 {
+    font-size: 50px;
+    margin-bottom: 18px;
+}
+
+.offer p {
+    width: 465px;
+    margin: 0 auto;
+    margin-bottom: 21px;
+    font-size: 17px;
+    line-height: 1.38em;
+}
+
+.offer .btn {
+    margin: 0 auto;
+}
+
+.offer img {
+    margin-top: 350px;
+    text-align: center;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    margin-top: 184px;
+}
+
+.arrow:hover {
+    opacity: 0.5;
+}
+
+.routes h2 {
+    margin-bottom: 47px;
+    text-align: left;
+}
+
+.routes a {
+    /*    margin-bottom: 96px;*/
+}
+
+.destinations {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 13px;
+    margin-bottom: 58px;
+
+
+}
+
+
+.destinations-item {
+    width: 47.5%;
+    box-shadow: 0px 17px 50px rgba(20, 28, 45, 0.14);
+    border-radius: 15px;
+    transition: all 0.5s ease;
+    display: flex;
+    /*    flex-wrap: wrap;*/
+}
+
+.destinations-item:nth-last-child(n+3) {
+    margin-bottom: 31px;
+}
+
+.destinations-item:hover {
+    box-shadow: 0px 10px 20px rgba(32, 40, 69, 0.24);
+}
+
+.destinations-item img {
+    display: block;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.destinations-content {
+    padding: 35px 21px 30px 30px;
+    /*	padding: 21px;*/
+    width: 308px;
+}
+
+.destinations-content h3 {
+    margin-bottom: 12px;
+}
+
+.destinations-date {
+    font-size: 13px;
+    color: #EE3C5C;
+    margin: 2px 0 17px;
+}
+
+.destinations-details {
+    display: flex;
+}
+
+.destinations-more {
+    display: none;
+
+}
+
+.destinations-visible {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.destinations-details span {
+    display: block;
+    text-align: center;
+    /*		text-align: center;*/
+    /*		display: block;*/
+    font-size: 13px;
+    background: #EE3C5C;
+    border-radius: 30px;
+    padding: 3px 13px 3px 13px;
+    margin-right: 1.73px;
+    margin-bottom: 16px;
+    color: #fff;
+    /*    height: 17px;*/
+    border: none;
+
+
+
+}
+
+.btn-routes {
+    margin: 63px auto 0;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*    margin-bottom: 101px;*/
+}
+
+.about-content img {
+    display: block;
+    border-radius: 15px;
+}
+
+.about-text {
+    width: 572px;
+}
+
+.about h2 {
+    margin-bottom: 49px;
+    text-align: left;
+}
+
+.about-text h3 {
+    margin-bottom: 21px;
+
+}
+
+.about-text p {
+    line-height: 1.5em;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0px;
+}
+
+.contacts h2 {
+    text-align: left;
+    font-size: 38px;
+    margin-bottom: 57px;
+
+}
+
+.form-popup{
+    width: 70%;
+   
+}
+
+.form-popup input {
+    border: 1px solid rgba(39, 52, 86, 0.26);
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    width: 130%;
+    padding: 10px 3px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.btn-popup{
+    width: 70%;
+    padding: 12px 0;
+    transition: all 0.5s ease;
+    font-size: 10px;
+    border-radius: 69px;
+    background-color: #FF7D34;
+    border: 1px solid #FF7D34;
+}
+
+.form {
+    box-shadow: 0px 17px 50px rgba(32, 40, 69, 0.14);
+    border-radius: 20px;
+    width: 601px;
+    text-align: left;
+    padding: 58px 64px 97px;
+    /*	margin: 0 auto*/
+    /*    margin-right: 219px;*/
+}
+
+.form h3 {
+    width: 367px;
+    margin: 0 0 45px 0;
+}
+
+.form input {
+    border: 1px solid rgba(39, 52, 86, 0.26);
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 19px 26px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.form .btn {
+    width: 60%;
+    padding: 22px 0;
+    transition: all 0.5s ease;
+    font-size: 17px;
+    border-radius: 69px;
+    background-color: #FF7D34;
+    border: 1px solid #FF7D34;
+}
+
+
+.contacts {}
+
+.contacts-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.form .btn:hover {
+    background: #fff;
+    color: #FF7D34;
+    border: 1px solid #FF7D34;
+}
+
+.about-call {
+    /*   text-align: center; */
+    display: block;
+    margin: 0 auto;
+
+}
+
+.about-call img {
+    margin: 23px auto;
+    text-align: center;
+    display: block;
+
+}
+
+
+/*
+.call-logo{
+    margin-bottom: 23px;
+margin: 23px auto;
+}
+*/
+
+.about-call a {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #72341A;
+    font-weight: 700;
+
+}
+
+
+.footer-text {
+    display: block;
+    font-size: 14px;
+    color: rgba(72, 34, 1A, 0.60);
+    text-align: center;
+    /*	margin: 119px 0 119px;*/
+    padding: 119px 0 119px;
+}
+
+.menu-btn {
+    display: none;
+}
+
+
+/*Start Meddi@ files*/
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+	
+/*
+	.logo{
+		margin-right: 260px;
+	}
+*/
+     
+	.call {
+		margin-left: auto;
+	}
+	
+    .next-trip{
+        display: none;
+    }
+    
+    .menu {
+        display: none;
+    }
+	
+    .btn-ghost {
+        margin: 0 auto;
+    }
+
+
+    .menu-btn {
+        margin-left: auto;
+		        display: block;
+    }
+
+
+    .routes h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+
+	.destinations {
+    display: flex;
+
+    font-size: 13px;
+    margin-bottom: 58px;
+
+
+}
+    .destinations-item {
+        width: 47.5%;
+        margin: 0 auto 30px;
+
+    }
+	
+	.destinations-content {
+		display: block;
+	}
+	
+	.destinations-item img {
+		display: block;
+    }
+	
+
+    .destinations-item img {
+        width: 100%;
+    }
+
+    .about h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-content {
+        flex-wrap: wrap;
+    }
+
+
+
+    .about-content img {
+        order: 1;
+        margin-bottom: 49px;
+    }
+
+    .about-content img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        margin: 30px auto 0;
+        width: 80%;
+        text-align: center;
+        order: 2;
+
+    }
+
+    .about-content img {
+        margin-bottom: 37px;
+    }
+
+    .contacts h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contacts-content {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        width: 601px;
+        text-align: center;
+        padding: 58px 64px 97px;
+        margin: 0 auto;
+    }
+
+    .form h3 {
+        text-align: center;
+        margin: 0 auto 45px;
+    }
+
+    .form .btn {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-call {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .about-call img {
+        margin: 57px auto 23px;
+    }
+	
+	.destinations-item{
+/*		display: block;*/
+		flex-wrap: wrap;
+	}
+	.destinations-item img{
+	    border-radius: 15px 15px 0px 0px;
+
+}
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+
+    }
+
+    .logo {
+        margin-right: 100px;
+
+    }
+	
+	.destinations-item{
+/*		display: block;*/
+		flex-wrap: wrap;
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+
+    }
+
+    .menu-btn img {
+        margin-left: 20px;
+    }
+
+    .logo {
+        margin-right: 20px;
+
+    }
+
+    .offer h1 {
+        line-height: 1.1em;
+        margin-bottom: 20px;
+    }
+
+    .about-content img {
+        width: 100%;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .form {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+/*        	background:red;*/
+
+    }
+
+    .call {
+        display: none;
+
+    }
+
+    .menu-btn {
+        margin-left: auto;
+    }
+
+    .menu-btn img {
+        margin-left: 0;
+    }
+
+    .offer h1 {
+        font-size: 30px;
+    }
+
+    .offer p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .offer {
+        margin-top: 103px;
+    }
+
+    .header {
+        padding-bottom: 143px;
+    }
+
+    section {
+        padding-top: 79px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 56px;
+    }
+
+    .destinations-item {
+        width: 100%;
+    }
+
+    .btn-routes {
+        margin: 15px auto 0;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .form {
+        padding: 42px 31px 65px;
+    }
+
+    .form h3 {
+        width: 100%;
+    }
+
+    .form input {
+        height: 51px;
+    }
+
+    .form input {
+        height: 57px;
+    }
+
+    .footer-text {
+        margin: 89px auto;
+    }
+}
